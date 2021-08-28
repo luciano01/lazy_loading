@@ -26,7 +26,7 @@ $ flutter run --release
 - [MobX](https://pub.dev/packages/mobx)
 - [Flutter Modular](https://pub.dev/packages/flutter_modular)
 - [Dio](https://pub.dev/packages/dio)
-- [RandomUser API](https://randomuser.me/api/)
+- [RandomUser API](https://randomuser.me/)
 
 ## Author
 * Luciano Martins ([Linkedin](https://br.linkedin.com/in/luciano01))
