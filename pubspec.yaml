@@ -13,12 +13,17 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+<<<<<<< HEAD
   flutter_modular: ^3.4.1+1
   mobx: ^2.0.4
   flutter_mobx: ^2.0.2
   build_runner: ^2.1.1
   modular_codegen: ^3.0.2
   dio: ^4.0.0
+=======
+  dio: ^4.0.4
+  rxdart: ^0.27.3
+>>>>>>> feature-bloc
 
 dev_dependencies:
   flutter_modular_test: ^1.0.1
