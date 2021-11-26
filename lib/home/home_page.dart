@@ -44,11 +44,23 @@ class _HomePageState extends State<HomePage> {
           if (hasData) {
             return ListView.builder(
               controller: _scrollController,
-              itemCount: itemCount + 1,
+              itemCount: itemCount,
               itemBuilder: (context, index) {
                 User user = listOfUsers![index];
-                if (index > itemCount) {
-                  return CircularProgressIndicator();
+                if (index == _bloc.listOfUsers.length - 1) {
+                  return Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        children: [
+                          CircularProgressIndicator(),
+                          SizedBox(height: 10),
+                          Text('Loading more Users...'),
+                        ],
+                      ),
+                    ),
+                  );
                 } else {
                   return ListTile(
                     leading: CircleAvatar(
